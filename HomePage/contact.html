@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Contact GRIDS APPS to ask a question or tell us about your project.">
+    <meta name="author" content="Nermin Ibadh">
+
+    <title>GRIDS APPS | Contact Us</title>
+</head>
+
+<body id="top">
+
+    <header>
+        <figure>
+            <img src="images/logo.png"
+                 alt="GRIDS APPS company logo"
+                 width="130">
+        </figure>
+
+        <h1>GRIDS APPS</h1>
+        <p>Websites, Apps, and Software Solutions</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="index.html#why-us">Why Choose Us</a> |
+            <a href="index.html#testimonials">Testimonials</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>
+                Have a question or need help with a project?
+                Fill out the form below and tell us what you need.
+            </p>
+
+            <p>
+                This is a training form.
+                Your information will not be sent
+                or saved when you submit it.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <p>
+                Fields marked with * are required.
+            </p>
+
+            <form onsubmit="return false;">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="first-name">First Name: *</label>
+                        <br>
+                        <input type="text"
+                               id="first-name"
+                               name="first-name"
+                               placeholder="Enter your first name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name: *</label>
+                        <br>
+                        <input type="text"
+                               id="last-name"
+                               name="last-name"
+                               placeholder="Enter your last name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address: *</label>
+                        <br>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <br>
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="Enter your phone number">
+                    </p>
+
+                    <p>
+                        <label for="country">Country: *</label>
+                        <br>
+                        <input type="text"
+                               id="country"
+                               name="country"
+                               placeholder="Enter your country"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="city">City:</label>
+                        <br>
+                        <input type="text"
+                               id="city"
+                               name="city"
+                               placeholder="Enter your city">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Project Information</legend>
+
+                    <p>
+                        <label for="company">Company Name:</label>
+                        <br>
+                        <input type="text"
+                               id="company"
+                               name="company"
+                               placeholder="Enter your company name">
+                    </p>
+
+                    <p>
+                        <label for="service">Service Needed: *</label>
+                        <br>
+                        <select id="service"
+                                name="service"
+                                required>
+                            <option value="">Choose a service</option>
+                            <option value="website">Web Development</option>
+                            <option value="mobile-app">Mobile App Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="software">Software Solutions</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <strong>Project Type:</strong>
+                        <br>
+                        <input type="radio"
+                               id="new-project"
+                               name="project-type"
+                               value="new">
+                        <label for="new-project">New Project</label>
+
+                        <input type="radio"
+                               id="existing-project"
+                               name="project-type"
+                               value="existing">
+                        <label for="existing-project">Existing Project</label>
+                    </p>
+
+                    <p>
+                        <label for="budget">Estimated Budget:</label>
+                        <br>
+                        <select id="budget" name="budget">
+                            <option value="">Choose a budget</option>
+                            <option value="under-500">Under $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-3000">$1000 - $3000</option>
+                            <option value="over-3000">Over $3000</option>
+                            <option value="not-sure">Not Sure Yet</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="start-date">Preferred Start Date:</label>
+                        <br>
+                        <input type="date"
+                               id="start-date"
+                               name="start-date">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <p>
+                        <label for="subject">Subject: *</label>
+                        <br>
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               placeholder="Enter the subject"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="message">Your Message: *</label>
+                        <br>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  cols="45"
+                                  placeholder="Tell us about your project or question"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <strong>Preferred Contact Method:</strong>
+                        <br>
+
+                        <input type="radio"
+                               id="contact-email"
+                               name="contact-method"
+                               value="email"
+                               checked>
+                        <label for="contact-email">Email</label>
+
+                        <input type="radio"
+                               id="contact-phone"
+                               name="contact-method"
+                               value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <input type="checkbox"
+                           id="agreement"
+                           name="agreement"
+                           required>
+                    <label for="agreement">
+                        I confirm that the information is correct. *
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Other Ways to Contact Us</h2>
+
+            <p>
+                You can also contact us by email
+                if you have a question about our services.
+            </p>
+
+            <address>
+                <p>
+                    <strong>Company:</strong>
+                    GRIDS APPS
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:gridsapps@gmail.com">
+                        gridsapps@gmail.com
+                    </a>
+                </p>
+            </address>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Before You Contact Us</h2>
+
+            <p>
+                To help us understand your request,
+                please include some details about your project.
+            </p>
+
+            <ul>
+                <li>What type of website or app do you need?</li>
+                <li>What is the main goal of your project?</li>
+                <li>Who will use your website or app?</li>
+                <li>When would you like to start?</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Explore Our Website</h2>
+
+            <p>
+                You can learn more about our work
+                before filling out the form.
+            </p>
+
+            <p>
+                <a href="about.html">About Us</a>
+                |
+                <a href="services.html">Our Services</a>
+                |
+                <a href="portfolio.html">Our Portfolio</a>
+                |
+                <a href="gallery.html">Project Gallery</a>
+                |
+                <a href="blog.html">Our Blog</a>
+            </p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &copy; 2026 GRIDS APPS.
+            Educational HTML5 Project.
+        </p>
+
+        <p>
+            Developed by Nermin Ibadh
+            as part of the Full Stack Web Development Internship.
+        </p>
+
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms &amp; Conditions</a> |
+            <a href="#top">Back to Top</a>
+        </p>
+    </footer>
+
+</body>
+</html>
