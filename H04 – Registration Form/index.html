@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internship application form for GRIDS APPS.">
+    <title>Internship Application | GRIDS APPS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Internship Application Form</h1>
+        <p>Welcome to GRIDS APPS! Please complete the form below.</p>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>1. Personal Information</legend>
+
+                <p>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName"
+                           placeholder="Enter your first name" required>
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="lastName"
+                           placeholder="Enter your last name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@email.com" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+                </p>
+
+                <p>
+                    <label for="birthDate">Date of Birth:</label><br>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </p>
+
+                <p>
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not">Prefer not to say</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="country">Country:</label><br>
+                    <input type="text" id="country" name="country"
+                           placeholder="Enter your country" required>
+                </p>
+
+                <p>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city"
+                           placeholder="Enter your city" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Education Information</legend>
+
+                <p>
+                    <label for="university">University:</label><br>
+                    <input type="text" id="university" name="university"
+                           placeholder="University name" required>
+                </p>
+
+                <p>
+                    <label for="major">Major:</label><br>
+                    <input type="text" id="major" name="major"
+                           placeholder="Your major" required>
+                </p>
+
+                <p>
+                    <label for="studyYear">Study Year:</label><br>
+                    <select id="studyYear" name="studyYear" required>
+                        <option value="">Select study year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                        <option value="5">Fifth Year</option>
+                        <option value="graduate">Graduate</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="average">University Average (0–100):</label><br>
+                    <input type="number" id="average" name="average"
+                           min="0" max="100" step="0.01"
+                           placeholder="Example: 85.5" required>
+                </p>
+
+                <p>
+                    <label for="graduationDate">Expected Graduation Date:</label><br>
+                    <input type="date" id="graduationDate"
+                           name="graduationDate" required>
+                </p>
+
+                <p>
+                    <label for="educationLevel">Education Level:</label><br>
+                    <select id="educationLevel" name="educationLevel" required>
+                        <option value="">Select education level</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Internship Information</legend>
+
+                <p>
+                    <label for="trainingField">Training Field:</label><br>
+                    <select id="trainingField" name="trainingField" required>
+                        <option value="">Select training field</option>
+                        <option value="frontend">Frontend Development</option>
+                        <option value="backend">Backend Development</option>
+                        <option value="fullstack">Full Stack Development</option>
+                        <option value="uiux">UI/UX Design</option>
+                        <option value="testing">Software Testing</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="startDate">Training Start Date:</label><br>
+                    <input type="date" id="startDate" name="startDate" required>
+                </p>
+
+                <p>
+                    <label for="duration">Training Duration:</label><br>
+                    <select id="duration" name="duration" required>
+                        <option value="">Select duration</option>
+                        <option value="1">1 Month</option>
+                        <option value="2">2 Months</option>
+                        <option value="3">3 Months</option>
+                        <option value="4">4 Months</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="trainingType">Training Type:</label><br>
+                    <select id="trainingType" name="trainingType" required>
+                        <option value="">Select training type</option>
+                        <option value="onsite">On-site</option>
+                        <option value="remote">Remote</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="skills">Your Skills:</label><br>
+                    <textarea id="skills" name="skills" rows="4" cols="40"
+                              placeholder="Example: HTML, CSS, Java"
+                              minlength="10" required></textarea>
+                </p>
+
+                <p>
+                    <label for="experience">Previous Experience:</label><br>
+                    <textarea id="experience" name="experience" rows="4" cols="40"
+                              placeholder="Describe your previous experience"></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Additional Information</legend>
+
+                <p>
+                    <label for="projectLink">Project Link (Optional):</label><br>
+                    <input type="url" id="projectLink" name="projectLink"
+                           placeholder="https://github.com/...">
+                </p>
+
+                <p>
+                    <label for="reason">Why do you want this internship?</label><br>
+                    <textarea id="reason" name="reason" rows="4" cols="40"
+                              placeholder="Write your reason here"
+                              minlength="20" required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GRIDS APPS. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
