@@ -1,0 +1,239 @@
+
+:root {
+    --primary: #23577a;
+    --primary-light: #4789b5;
+    --accent: #258bb4;
+    --background: #f2f8fc;
+    --white: #ffffff;
+    --text: #304457;
+    --muted: #6c8191;
+    --border: #d5e5ef;
+    --light-blue: #eaf5fc;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.header {
+    background: linear-gradient(135deg, #23577a, #4789b5);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    color: var(--white);
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.header p {
+    color: #e4f4ff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+.application-form {
+    background-color: var(--white);
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 22px rgba(35, 87, 122, 0.07);
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    margin: 0 0 30px;
+    background-color: #ffffff;
+}
+
+fieldset:nth-of-type(2) {
+    background-color: #f6fbff;
+}
+
+fieldset:nth-of-type(4) {
+    background-color: #f6fbff;
+}
+
+legend {
+    color: var(--primary);
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+fieldset p {
+    margin: 0 0 22px;
+}
+
+fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c8dce9;
+    border-radius: 7px;
+    background-color: var(--white);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8b9ca8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 139, 180, 0.13);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    color: var(--text);
+    font-weight: normal;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0 0;
+}
+
+button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent);
+}
+
+button[type="reset"] {
+    background-color: var(--light-blue);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+button[type="reset"]:hover {
+    background-color: #d7ecf9;
+}
+
+button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 35px 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .main-content {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .application-form {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 20px 15px;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,255 @@
+
+.header,
+.footer {
+    background: linear-gradient(135deg, #23395b, #477fa8);
+    color: #ffffff;
+}
+
+.pricing-table tbody tr:nth-child(odd) th,
+.pricing-table tbody tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+.pricing-table tbody tr:nth-child(even) th,
+.pricing-table tbody tr:nth-child(even) td {
+    background-color: #e8f3fb;
+}
+
+.pricing-table tbody td:nth-child(3),
+.pricing-table tbody tr:nth-child(even) td:nth-child(3) {
+    background-color: inherit;
+}
+
+.pricing-table tbody tr:nth-child(odd) td:nth-child(3) {
+    background-color: #ffffff;
+}
+
+.pricing-table tbody tr:nth-child(even) td:nth-child(3) {
+    background-color: #e8f3fb;
+}
+
+:root {
+    --primary: #23395b;
+    --primary-light: #477fa8;
+    --accent: #477fa8;
+    --accent-light: #e8f3fb;
+    --background: #f5f8fc;
+    --white: #ffffff;
+    --text: #344154;
+    --muted: #6b7788;
+    --border: #dce6ef;
+    --light-blue: #edf4fa;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+.header,
+.footer {
+    background: linear-gradient(135deg, #23395b, #477fa8);
+    color: var(--white);
+    text-align: center;
+}
+
+.header {
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin: 0 0 20px;
+}
+
+.header p {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 18px;
+    color: #e6edf7;
+}
+
+.header .header-note {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+.section {
+    background-color: var(--white);
+    padding: 38px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 18px rgba(35, 57, 91, 0.06);
+}
+
+.section h2 {
+    color: var(--primary);
+    font-size: 29px;
+    margin: 0 0 25px;
+}
+
+.pricing-section {
+    background-color: var(--white);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.pricing-table caption {
+    color: var(--primary-light);
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 0 20px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    border: 1px solid var(--border);
+    padding: 16px 14px;
+}
+
+.pricing-table thead th,
+.pricing-table thead .featured-plan {
+    background-color: var(--primary-light);
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
+
+.pricing-table tbody th {
+    color: var(--primary);
+    text-align: left;
+    font-weight: bold;
+}
+
+.pricing-table tbody tr:nth-child(odd) th,
+.pricing-table tbody tr:nth-child(odd) td {
+    background-color: var(--white);
+}
+
+.pricing-table tbody tr:nth-child(even) th,
+.pricing-table tbody tr:nth-child(even) td {
+    background-color: var(--accent-light);
+}
+
+.pricing-table tbody tr:first-child td {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.pricing-table .standard-price {
+    color: var(--primary);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.plans-section {
+    background-color: var(--light-blue);
+}
+
+.plan-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--primary-light);
+    border-radius: var(--radius);
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(35, 57, 91, 0.04);
+}
+
+.plan-card:last-child {
+    margin-bottom: 0;
+}
+
+.plan-card h3 {
+    color: var(--primary);
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.plan-card p {
+    margin: 0;
+}
+
+.standard-card {
+    background-color: var(--accent-light);
+    border-left-color: var(--primary-light);
+}
+
+.standard-card h3 {
+    color: var(--primary);
+}
+
+.footer {
+    padding: 35px 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 40px 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .main-content {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .plan-card {
+        padding: 20px;
+    }
+}
