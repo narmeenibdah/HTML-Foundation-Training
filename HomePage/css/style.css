@@ -422,33 +422,79 @@ address {
         font-size: 14px;
     }
 }
+
 @media (min-width: 601px) and (max-width: 900px) {
     .services-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
 @media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: minmax(0, 1fr);
+    .header {
+        padding: 25px 15px 15px;
     }
-}
-@media (max-width: 600px) {
-    .navbar {
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .header .navbar {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: stretch;
         gap: 8px;
         padding: 15px 5px;
     }
 
-    .navbar a {
+    .header .navbar a {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        min-width: 0;
         padding: 10px 5px;
         background-color: rgba(255, 255, 255, 0.15);
         border-radius: 6px;
         font-size: 13px;
         line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .main-content {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .section {
+        padding: 24px;
+    }
+
+    .hero {
+        padding: 40px 22px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
     }
 }
