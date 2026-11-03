@@ -31,3 +31,16 @@ One problem was that the navigation links did not appear correctly on mobile scr
 
 ## Result
 The website now adjusts to different screen sizes, and the content is easier to read and navigate.
+## Day 04 – Exit Ticket
+
+### 1. What did I build today?
+I made the GRIDS APPS website responsive using Flexbox, CSS Grid, and media queries.
+
+### 2. What bug or difficulty did I solve?
+The navigation bar did not display correctly on mobile screens. I fixed it using CSS Grid and media queries.
+
+### 3. What concept can I explain clearly?
+I can explain how Flexbox and CSS Grid help create responsive layouts.
+
+### 4. What remains incomplete?
+Nothing from the main responsive design tasks.
